@@ -1,0 +1,77 @@
+.contactContainer {
+  width: 61.5rem;
+  height: 100vh;
+  margin: 0 auto;
+
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  form {
+    width: 50rem;
+    background-color: #f36464;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    label {
+      font-size: 1.4rem;
+    }
+
+    input,
+    textarea {
+      border-radius: 0.2rem;
+      border-color: var(--blue-500);
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        width: 18rem;
+
+        input {
+          height: 2.5rem;
+        }
+      }
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+
+      textarea {
+        height: 8rem;
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+      width: 12rem;
+      border: none;
+      border-radius: 0.2rem;
+      padding: 0.5rem;
+      color: #fff;
+      background-color: var(--blue-500);
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}

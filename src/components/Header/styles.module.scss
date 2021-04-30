@@ -1,0 +1,26 @@
+.header {
+  width: 61.5rem;
+  height: 6rem;
+  color: #fff;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+
+  h1 {
+    font-family: "Hammersmith One", sans-serif;
+  }
+
+  ul {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+
+    display: flex;
+    list-style: none;
+
+    li:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
