@@ -64,7 +64,7 @@ export const ContactForm = () => {
 
         <label className={styles.message}>
           Me conte sobre seu projeto
-          <textarea rows="8" name="message"></textarea>
+          <textarea rows={8} name="message"></textarea>
         </label>
 
         <button
