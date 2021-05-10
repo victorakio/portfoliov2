@@ -5,6 +5,7 @@
   color: #fff;
 
   display: flex;
+  align-items: center;
 
   .contactText {
     width: 40%;
@@ -34,7 +35,7 @@
     padding: 2rem 4rem;
     display: flex;
     flex-direction: column;
-    height: 30rem;
+    height: 28rem;
     justify-content: space-between;
 
     label {
@@ -46,8 +47,8 @@
       border-radius: 0.2rem;
       border: none;
       padding: 0.5rem;
-      margin-top: 0.5rem;
-      margin-bottom: 2rem;
+      margin-top: 0.2rem;
+      margin-bottom: 1rem;
       width: 100%;
       transition: border-bottom ease-in-out 0.2s;
     }
