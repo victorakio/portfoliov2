@@ -29,13 +29,14 @@
   }
 
   .projectDetails {
-    width: 60%;
+    width: 80%;
     height: 60%;
     background-color: #514e4e;
     display: flex;
     border-radius: 1rem;
 
     img {
+      width: 524px;
       object-fit: cover;
       border-top-left-radius: 0.5rem;
       border-bottom-left-radius: 0.5rem;
