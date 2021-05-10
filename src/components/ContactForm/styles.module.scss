@@ -1,76 +1,118 @@
 .contactContainer {
   width: 61.5rem;
-  height: 100vh;
-  margin: 0 auto;
-
+  height: calc(100vh - 140px);
+  margin: 2rem auto;
   color: #fff;
 
   display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  p {
-    font-size: 1.6rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+  .contactText {
+    width: 40%;
+    margin-right: 4rem;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    hr {
+      margin: 2rem 0;
+      height: 0.2px;
+    }
   }
 
   form {
-    width: 50rem;
-    background-color: #f36464;
+    width: 60%;
+    background-color: #2e2d2f;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: space-between;
 
     label {
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
 
     input,
     textarea {
       border-radius: 0.2rem;
-      border-color: var(--blue-500);
+      border: none;
       padding: 0.5rem;
       margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      transition: border-bottom ease-in-out 0.2s;
     }
 
-    .inputs {
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-bottom: 4px solid #cbd400;
+    }
+
+    label {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
 
-      label {
-        display: flex;
-        flex-direction: column;
-        width: 18rem;
-
-        input {
-          height: 2.5rem;
-        }
+      input {
+        height: 2rem;
       }
     }
 
     .message {
       display: flex;
       flex-direction: column;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
 
       textarea {
-        height: 8rem;
+        height: 6rem;
       }
     }
 
     button {
       margin-top: 1rem;
-      width: 12rem;
+      width: 100%;
       border: none;
       border-radius: 0.2rem;
       padding: 0.5rem;
+      font-weight: 500;
+      font-size: 1.2rem;
       color: #fff;
-      background-color: var(--blue-500);
+      background-color: #cbd400;
       transition: filter 0.2s;
 
       &:hover {
         filter: brightness(0.8);
+      }
+
+      .spinner {
+        animation: spin infinite 1.5s linear;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      &.inactive {
+        background-color: #adadad;
+        cursor: not-allowed;
+
+        &:hover {
+          filter: unset;
+        }
       }
     }
   }

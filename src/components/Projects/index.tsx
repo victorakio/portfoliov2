@@ -4,7 +4,9 @@ import styles from "./styles.module.scss";
 export function Projects() {
   return (
     <section className={styles.projectsContainer}>
-      <h2 className={styles.projectsTitle}>Projetos</h2>
+      <h2 className={styles.projectsTitle} id="projects">
+        Projetos
+      </h2>
 
       <div className={styles.projects}>
         <Project

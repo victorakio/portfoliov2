@@ -1,18 +1,28 @@
 .aboutContainer {
-  width: 61.5rem;
-  height: calc(100vh - 6rem);
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  background-image: url("/images/about.svg");
+  background-image: url("/images/background-code.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: cover;
 
   .textWrapper {
-    width: 32rem;
+    width: 61.5rem;
+    margin: 0 auto;
     color: #fff;
-    font-weight: 400;
-    font-family: "Oswald", sans-serif;
     font-size: 2.2rem;
     padding-top: 2.4rem;
+    padding-right: 38rem;
+
+    h1 {
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+
+  .green,
+  .dot {
+    color: #cbd400;
   }
 }

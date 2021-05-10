@@ -4,5 +4,9 @@
     height: 12rem;
     object-fit: cover;
     border-radius: 0.5rem;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 }

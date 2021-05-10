@@ -1,22 +1,20 @@
 .projectsContainer {
-  width: 61.5rem;
   height: 100vh;
   margin: 0 auto;
 
   .projectsTitle {
-    width: 15rem;
     display: flex;
-    justify-content: center;
     color: #fff;
-    border-bottom: 0.2rem solid #fff;
-    padding: 1rem 0;
+    padding: 2rem 11.5rem 3rem;
     margin: 0 auto;
+    width: 100%;
+    //background-color: #cbd400;
   }
 
   .projects {
     display: grid;
-    margin-top: 2rem;
+    padding: 0 11.5rem;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3.5rem;
+    gap: 3rem;
   }
 }

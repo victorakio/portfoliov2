@@ -5,7 +5,8 @@
 }
 
 :root {
-  --blue-500: #3c385a;
+  --white: #fff;
+  --gray-800: #201f21;
 }
 
 @media (max-width: 1080px) {
@@ -20,14 +21,13 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: var(--blue-500);
-  background: linear-gradient(
-    180deg,
-    #0e0036 0%,
-    rgba(7, 0, 75, 0.947) 54.69%,
-    rgba(13, 0, 88, 0.88) 100%
-  );
+  color: var(--white);
+  background: var(--gray-800);
   min-height: 100vh;
 }
 
@@ -36,7 +36,7 @@ input,
 textarea,
 select,
 button {
-  font: 400 1rem "Oswald", sans-serif;
+  font: 400 1rem "Roboto", sans-serif;
 }
 
 button {

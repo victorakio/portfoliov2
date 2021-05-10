@@ -3,13 +3,19 @@ import styles from "./styles.module.scss";
 export function Header() {
   return (
     <header className={styles.header}>
-      <h1>Victor Akio</h1>
+      <img src="/logo-cor.svg" alt="logo" />
 
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Projetos</li>
-          <li>Contato</li>
+          <li className={styles.active}>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#projects">Projetos</a>
+          </li>
+          <li>
+            <a href="#contact">Contato</a>
+          </li>
         </ul>
       </nav>
     </header>
