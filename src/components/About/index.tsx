@@ -48,7 +48,7 @@ export function About() {
     <div className={styles.aboutContainer}>
       <Header />
       <div className={styles.textWrapper}>
-        <h1>Hi, i'm a</h1>
+        <h1>HI, I'M A</h1>
         <h1 className={styles.green}>
           {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
         </h1>
